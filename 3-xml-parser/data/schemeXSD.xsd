@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" 
+	targetNamespace="http://www.example.com/medicines"
+	xmlns:tns="http://www.example.com/medicines"
+	elementFormDefault="qualified">
+
+	<element name="medicines">
+		<complexType>
+			<sequence>
+				<element name="medicine" type="tns:Medicine" minOccurs="1" maxOccurs="unbounded"/>
+			</sequence>
+		</complexType>
+	</element>
+
+
+	<complexType name="Medicine">
+ 		<sequence>
+			<element name="name" type="tns:Correct-string"/>
+			<element name="pharm" type="tns:Correct-string"/>
+			<element name="analogs" type="tns:Correct-string" minOccurs="0" maxOccurs="unbounded"/>
+			<element name="manufacturer" type="tns:Manufacturer"/>
+ 		</sequence>
+		<attribute name="id" type="tns:Id" use="required"/>
+		<attribute name="group" type="tns:Group" use="optional"/>
+	</complexType>
+
+
+	<simpleType name="Id">
+		<restriction base="string">
+			<pattern value="[A-Za-z]\d{6}"/>
+		</restriction>
+	</simpleType>
+
+	<simpleType name="Correct-string">
+        <restriction base="string">
+        	<pattern value="[a-zA-Z]{2,30}"/>
+        </restriction>
+    </simpleType>
+
+	<simpleType name="Group">
+		<restriction base="string">
+			<enumeration value="antibiotic"/>
+			<enumeration value="sedative"/>
+			<enumeration value="vitamin"/>
+		</restriction>
+	</simpleType>
+
+
+	<complexType name="Manufacturer">
+		<sequence>
+			<element name="certificate" type="tns:Certificate"/>
+			<element name="packages" type="tns:Packages"/>
+			<element name="dosage" type="tns:Dosage" />
+		</sequence>
+		<attribute name="versionn" type="tns:Versionn" use="required" default="tablets"/>
+	</complexType>
+
+	<simpleType name="Versionn">
+		<restriction base="string">
+			<enumeration value="tablets"/>
+			<enumeration value="drops"/>
+		</restriction>
+	</simpleType>
+
+	<complexType name="Certificate">
+		<attribute name="number" type="positiveInteger" use="required"/>
+		<attribute name="issue-date" type="date" use="required"/>
+		<attribute name="expiration-date" type="date" use="required"/>
+		<attribute name="reg-organization" type="tns:Correct-string" use="required"/>
+	</complexType>
+
+	<complexType name="Packages">
+		<attribute name="quantity-in-package" type="positiveInteger" use="required"/>
+		<attribute name="price" type="positiveInteger" use="required"/>
+	</complexType>
+
+	<complexType name="Dosage">
+		<attribute name="quantity-per-day" type="positiveInteger" use="required"/>
+		<attribute name="period-of-use-day" type="positiveInteger" use="required"/>
+	</complexType>
+
+</schema>

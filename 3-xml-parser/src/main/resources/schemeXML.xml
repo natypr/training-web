@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<medicines xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://www.example.com/medicines"
+        xsi:schemaLocation="http://www.example.com/medicines schemeXSD.xsd">
+
+    <medicine id="A100000" group="antibiotic">
+        <name>Analgin</name>
+        <pharm>Belmedpreparaty</pharm> 
+        <analogs>Andipal</analogs>   <!--  Nebagin  Realgin  -->
+        <manufacturer version="tablets">
+            <certificate number="12" issue-date="2016-11-30" expiration-date="2021-11-30"
+                         reg-organization="Ozonepharm"/>
+            <packages price="105" quantity-in-package="20"/>
+            <dosage quantity-per-day="3" period-of-use-day="90"/>
+        </manufacturer>
+    </medicine>
+
+    <medicine id="Z100001">
+        <name>Hematogen</name>
+        <pharm>Exon</pharm> 
+        <manufacturer version="tablets">
+            <certificate number="28" issue-date="2018-10-19" expiration-date="2022-04-15"
+                         reg-organization="Lecpharm"/>
+            <packages price="50" quantity-in-package="4"/>
+            <dosage quantity-per-day="4" period-of-use-day="10"/>
+        </manufacturer>
+    </medicine>
+
+</medicines>
+

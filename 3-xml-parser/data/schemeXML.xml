@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<medicines xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://www.example.com/medicines"
+        xsi:schemaLocation="http://www.example.com/medicines schemeXSD.xsd">
+
+    <medicine id="A100000" group="antibiotic">
+        <name>Analgin</name>
+        <pharm>Belmedpreparaty</pharm> 
+        <analogs>Andipal</analogs>
+        <manufacturer versionn="tablets">
+            <certificate number="12" issue-date="2016-11-30" expiration-date="2021-11-30"
+                         reg-organization="Ozonepharm"/>
+            <packages price="105" quantity-in-package="20"/>
+            <dosage quantity-per-day="3" period-of-use-day="90"/>
+        </manufacturer>
+    </medicine>
+
+    <medicine group="antibiotic" id="B100541">
+        <name>Hematogen</name>
+        <pharm>Exon</pharm> 
+        <manufacturer versionn="tablets">
+            <certificate number="28" issue-date="2018-10-19" expiration-date="2022-04-15"
+                         reg-organization="Lecpharm"/>
+            <packages price="50" quantity-in-package="4"/>
+            <dosage quantity-per-day="4" period-of-use-day="10"/>
+        </manufacturer>
+    </medicine>
+
+    <medicine id="C102001">
+        <name>Nuritan</name>
+        <pharm>Vern</pharm>
+        <manufacturer versionn="tablets">
+            <certificate number="28" issue-date="2018-10-19" expiration-date="2022-04-15"
+                         reg-organization="Lecpharm"/>
+            <packages price="50" quantity-in-package="4"/>
+            <dosage quantity-per-day="4" period-of-use-day="10"/>
+        </manufacturer>
+    </medicine>
+
+    <medicine id="D300001" group="sedative">
+        <name>Hematogen</name>
+        <pharm>Exon</pharm>
+        <manufacturer versionn="tablets">
+            <certificate number="28" issue-date="2018-10-19" expiration-date="2022-04-15"
+                         reg-organization="Lecpharm"/>
+            <packages price="50" quantity-in-package="4"/>
+            <dosage quantity-per-day="4" period-of-use-day="10"/>
+        </manufacturer>
+    </medicine>
+
+    <medicine id="R230001" group="antibiotic">
+        <name>Hematogen</name>
+        <pharm>Exon</pharm>
+        <manufacturer versionn="tablets">
+            <certificate number="28" issue-date="2018-10-19" expiration-date="2022-04-15"
+                         reg-organization="Lecpharm"/>
+            <packages price="50" quantity-in-package="4"/>
+            <dosage quantity-per-day="4" period-of-use-day="10"/>
+        </manufacturer>
+    </medicine>
+
+    <medicine id="E435001" group="sedative">
+        <name>Hematogen</name>
+        <pharm>Exon</pharm>
+        <manufacturer versionn="tablets">
+            <certificate number="28" issue-date="2018-10-19" expiration-date="2022-04-15"
+                         reg-organization="Lecpharm"/>
+            <packages price="50" quantity-in-package="4"/>
+            <dosage quantity-per-day="4" period-of-use-day="10"/>
+        </manufacturer>
+    </medicine>
+
+    <medicine id="U103201">
+        <name>Hematogen</name>
+        <pharm>Exon</pharm>
+        <manufacturer versionn="tablets">
+            <certificate number="28" issue-date="2018-10-19" expiration-date="2022-04-15"
+                         reg-organization="Lecpharm"/>
+            <packages price="50" quantity-in-package="4"/>
+            <dosage quantity-per-day="4" period-of-use-day="10"/>
+        </manufacturer>
+    </medicine>
+
+    <medicine id="Q140001" group="vitamin">
+        <name>Hematogen</name>
+        <pharm>Exon</pharm>
+        <manufacturer versionn="tablets">
+            <certificate number="28" issue-date="2018-10-19" expiration-date="2022-04-15"
+                         reg-organization="Lecpharm"/>
+            <packages price="50" quantity-in-package="4"/>
+            <dosage quantity-per-day="4" period-of-use-day="10"/>
+        </manufacturer>
+    </medicine>
+
+    <medicine id="O104001">
+        <name>Hematogen</name>
+        <pharm>Exon</pharm>
+        <manufacturer versionn="tablets">
+            <certificate number="28" issue-date="2018-10-19" expiration-date="2022-04-15"
+                         reg-organization="Lecpharm"/>
+            <packages price="50" quantity-in-package="4"/>
+            <dosage quantity-per-day="4" period-of-use-day="10"/>
+        </manufacturer>
+    </medicine>
+
+    <medicine id="I100901" group="sedative">
+        <name>Hematogen</name>
+        <pharm>Exon</pharm>
+        <manufacturer versionn="tablets">
+            <certificate number="28" issue-date="2018-10-19" expiration-date="2022-04-15"
+                         reg-organization="Lecpharm"/>
+            <packages price="50" quantity-in-package="4"/>
+            <dosage quantity-per-day="4" period-of-use-day="10"/>
+        </manufacturer>
+    </medicine>
+
+    <medicine id="P100078" group="vitamin">
+        <name>Hematogen</name>
+        <pharm>Exon</pharm>
+        <manufacturer versionn="tablets">
+            <certificate number="28" issue-date="2018-10-19" expiration-date="2022-04-15"
+                         reg-organization="Lecpharm"/>
+            <packages price="50" quantity-in-package="4"/>
+            <dosage quantity-per-day="4" period-of-use-day="10"/>
+        </manufacturer>
+    </medicine>
+
+    <medicine id="J100991">
+        <name>Hematogen</name>
+        <pharm>Exon</pharm>
+        <manufacturer versionn="tablets">
+            <certificate number="28" issue-date="2018-10-19" expiration-date="2022-04-15"
+                         reg-organization="Lecpharm"/>
+            <packages price="50" quantity-in-package="4"/>
+            <dosage quantity-per-day="4" period-of-use-day="10"/>
+        </manufacturer>
+    </medicine>
+
+    <medicine id="S103401" group="vitamin">
+        <name>Hematogen</name>
+        <pharm>Exon</pharm>
+        <manufacturer versionn="tablets">
+            <certificate number="28" issue-date="2018-10-19" expiration-date="2022-04-15"
+                         reg-organization="Lecpharm"/>
+            <packages price="50" quantity-in-package="4"/>
+            <dosage quantity-per-day="4" period-of-use-day="10"/>
+        </manufacturer>
+    </medicine>
+
+    <medicine id="Z999001">
+        <name>Hematogen</name>
+        <pharm>Exon</pharm>
+        <manufacturer versionn="tablets">
+            <certificate number="28" issue-date="2018-10-19" expiration-date="2022-04-15"
+                         reg-organization="Lecpharm"/>
+            <packages price="50" quantity-in-package="4"/>
+            <dosage quantity-per-day="4" period-of-use-day="10"/>
+        </manufacturer>
+    </medicine>
+
+    <medicine id="G100031" group="vitamin">
+        <name>Hematogen</name>
+        <pharm>Exon</pharm>
+        <manufacturer versionn="tablets">
+            <certificate number="28" issue-date="2018-10-19" expiration-date="2022-04-15"
+                         reg-organization="Lecpharm"/>
+            <packages price="50" quantity-in-package="4"/>
+            <dosage quantity-per-day="4" period-of-use-day="10"/>
+        </manufacturer>
+    </medicine>
+
+    <medicine id="W132001" group="vitamin">
+        <name>Hematogen</name>
+        <pharm>Exon</pharm>
+        <manufacturer versionn="tablets">
+            <certificate number="28" issue-date="2018-10-19" expiration-date="2022-04-15"
+                         reg-organization="Lecpharm"/>
+            <packages price="50" quantity-in-package="4"/>
+            <dosage quantity-per-day="4" period-of-use-day="10"/>
+        </manufacturer>
+    </medicine>
+
+</medicines>
+
